@@ -15,5 +15,11 @@ function clear() {
 function calculate() {     
     heightValue = parseFloat(height.value);
     weightValue = parseFloat(weight.value);
+
+    if (!heightValue || !weightValue)
+    {
+        alert('Enter valid value!!');
+        return 1;
+    }
     document.getElementById('result').textContent = `Result: ${(weightValue / (heightValue * heightValue)).toFixed(2)}`;
 } 
