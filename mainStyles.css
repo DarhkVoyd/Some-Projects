@@ -1,0 +1,160 @@
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+
+body {
+	background: rgb(238, 238, 238);
+}
+
+.nav-bar {
+	background: white;
+	padding: 10px 30px 10px 30px;
+	position: fixed;
+	top: 0;
+	left: 0;
+	right: 0;
+	margin: 0 auto;
+	display: flex;
+	flex-direction: row;
+	justify-content: space-between;
+}
+
+.nav-bar .nav-header header h1 {
+	font-family: 'Bebas Neue', sans-serif;
+	font-size: 32px;
+	color: black;
+}
+
+.nav-bar .nav-wrapper {
+	display: flex;
+	flex-direction: row;
+	align-items: center;
+}
+
+.nav-wrapper nav ul {
+	display: flex;
+	flex-direction: row;
+}
+
+.nav-wrapper nav li {
+	margin: 0px 60px 0px 60px;
+	list-style: none;
+}
+
+.nav-wrapper nav li a {
+	font-family: 'Bebas Neue', sans-serif;
+	font-size: 18px;
+	color: black;
+	text-decoration: none;
+}
+
+.wrapper {
+	/* background: black; */
+	padding: 50px 100px 0px 100px;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+}
+
+#projects {
+	/* background: blue; */
+	position: relative;
+	width: 100%;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	animation: projects 2s ease-out 1 forwards;
+}
+
+.wrapper h2.Tech-Stack {
+	/* background: orange; */
+	font-family: 'Bebas Neue', sans-serif;
+	margin: 60px 0 20px 0;
+	font-size: 30px;
+}
+
+.line-break {
+	/* background: red; */
+	margin: 0 auto;
+	width: 100%;
+}
+
+.wrapper #projects .project-list {
+	/* background: red; */
+	margin: 100px 0 20px 0;
+	width: 100%;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+}
+
+.wrapper .proj-item {
+	/* background: purple; */
+	display: flex;
+	flex-direction: row;
+	justify-content: flex-start;
+	align-items: center;
+	z-index: 3;
+}
+
+.vertical {
+	position: relative;
+	left: 13.5px;
+	border-left: 3px solid black;
+	height: 100px;
+}
+
+.wrapper .project-list .project-bullet-below {
+	width: 30px;
+	height: 30px;
+	background: black;
+	border-radius: 100%;
+}
+
+.wrapper .project-bullet-over {
+	position: relative;
+	left: -26.8px;
+	width: 24px;
+	height: 24px;
+	background: white;
+	border-radius: 100%;
+}
+
+.wrapper .project-bullet-top {
+	position: relative;
+	left: -48.5px;
+	width: 20px;
+	height: 20px;
+	background: black;
+	border-radius: 100%;
+}
+
+.wrapper li {
+	margin-left: 0px;
+	list-style: none;
+}
+
+.wrapper #projects .dev-proj a {
+	position: relative;
+	left: -10px;
+	font-family: 'Bebas Neue', sans-serif;
+	font-size: 20px;
+	color: black;
+	text-decoration: none;
+	cursor: pointer;
+}
+
+/* Animations */
+
+@keyframes projects {
+	0% {
+		opacity: 0;
+		top: 200px;
+	}
+	100% {
+		opacity: 100;
+		top: 0px;
+	}
+}

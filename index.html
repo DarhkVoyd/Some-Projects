@@ -1,38 +1,88 @@
 <!DOCTYPE html>
-<html lang="en">
-	<head>
-		<meta charset="UTF-8" />
-		<meta http-equiv="X-UA-Compatible" content="IE=edge" />
-		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
-		<title>BMI Calculator</title>
-		<link rel="stylesheet" href="style.css" />
-		<script src="script.js" defer></script>
-	</head>
-	<body>
-		<div id="card">
-			<header><h1 id="main-title">BMI Calculator</h1></header>
-			<label for="height"
-				>Height (in m) :
-				<input
-					type="text"
-					name="height"
-					id="height"
-					placeholder="Enter your height"
-			/></label>
-			<br />
-			<label for="weight"
-				>Weight (in Kg) :
-				<input
-					type="text"
-					name="weight"
-					id="weight"
-					placeholder="Enter your weight"
-			/></label>
-			<div id="buttons">
-				<button type="submit" id="calculate">Calculate</button>
-				<button type="submit" id="clear">Clear</button>
-			</div>
-			<p id="result"></p>
+<!-- External Stylesheets -->
+<link href="mainStyles.css" rel="stylesheet">
+
+<!-- External Fonts -->
+<link href='https://fonts.googleapis.com/css?family=Bebas Neue' rel='stylesheet'>
+
+<html>
+<head></head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>Some Projects</title>
+</head>
+<body>
+
+	<!-- The Nav Bar Starts -->
+	<div class="nav-bar" id="Home">
+		<div class="nav-header">
+			<header><h1 class="logo">Some Projects</h1></header>
 		</div>
-	</body>
+		<div class="nav-wrapper">
+			<nav>
+				<ul>
+					<li><a href="#Home">Home</a></li>
+					<li><a href="#Projects">Projects</a></li>
+					<li><a href="#About">About</a></li>
+				</ul>
+			</nav>
+		</div>
+	</div>
+	<!-- The Nav Bar Ends -->
+
+	<div class="wrapper">
+		<!-- The Start -->
+		<div id="projects">
+			<!-- First Tech Stack Starts -->
+			<h2 class="Tech-Stack">JavaScript</h2>
+			<hr class="line-break">
+			<div class="project-list">
+				<div class="list-wrapper">
+					
+					<div class="proj-item">
+						<div class="project-bullet-below" for="BMI Calculator"></div>
+						<div class="project-bullet-over" for="BMI Calculator"></div>
+						<div class="project-bullet-top" for="BMI Calculator"></div>
+						<ul>
+							<li class="dev-proj"><a id="BMI Calculator" href="bmi-calculator/index.html">BMI Calculator</a></li>
+						</ul>
+					</div>
+
+					<div class = "vertical"></div>
+	
+					<div class="proj-item">
+						<div class="project-bullet-below" for="Coming Soon"></div>
+						<div class="project-bullet-over" for="Coming Soon"></div>
+						<div class="project-bullet-top" for="Coming Soon"></div>
+						<ul>
+							<li class="dev-proj"><a id="Coming Soon" href="#">Coming Soon</a></li>
+						</ul>
+					</div>
+	
+				</div>
+			</div>
+			<!-- First Tech Stack Ends -->
+
+			<!-- Second Tech Stack Starts -->
+			<h2 class="Tech-Stack">Flutter</h2>
+			<hr class="line-break">
+			<div class="project-list">
+				<div class="list-wrapper">
+					
+					<div class="proj-item">
+						<div class="project-bullet-below" for="Xpense"></div>
+						<div class="project-bullet-over" for="Xpense"></div>
+						<div class="project-bullet-top" for="Xpense"></div>
+						<ul>
+							<li class="dev-proj"><a id="Xpense" href="https://github.com/DarhkVoyd/Xpense" target="_blank">Xpense</a></li>
+						</ul>
+					</div>
+	
+				</div>
+			</div>
+			<!-- Second Tech Stack Ends -->
+		</div>
+		<!-- The End -->
+	</div>
+</body>
 </html>
